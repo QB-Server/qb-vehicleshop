@@ -168,27 +168,27 @@ Config.Shops = {
         ['VehicleSpawn'] = vector4(-71.39, 84.41, 71.5, 65.41),
         ['ShowroomVehicles'] = {
             [1] = {
-                coords = vector4(-75.74, 75.02, 71.06, 201.01),
+                coords = vector4(-75.74, 75.02, 70.90, 201.01),
                 defaultVehicle = '718caymans',
                 chosenVehicle = '718caymans',
             },
             [2] = {
-                coords = vector4(-68.21, 74.67, 70.96 - 1.0, 116.08),
+                coords = vector4(-68.21, 74.67, 71.57 - 1.0, 116.08),
                 defaultVehicle = 'r820',
                 chosenVehicle = 'r820',
             },
             [3] = {
-                coords = vector4(-70.8, 68.95, 71.09 - 1.0, 271.51),
+                coords = vector4(-70.8, 68.95, 71.76 - 1.0, 271.51),
                 defaultVehicle = 'm2',
                 chosenVehicle = 'm2',
             },
             [4] = {
-                coords = vector4(-64.11, 65.28, 71.23 - 1.0, 332.11),
+                coords = vector4(-64.11, 65.28, 71.90 - 1.0, 332.11),
                 defaultVehicle = 'gtr',
                 chosenVehicle = 'gtr',
             },
             [5] = {
-                coords = vector4(-58.58, 71.75, 71.15 - 1.0, 125.39),
+                coords = vector4(-58.58, 71.75, 71.77 - 1.0, 125.39),
                 defaultVehicle = 'teslapd',
                 chosenVehicle = 'teslapd',
             },
