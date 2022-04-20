@@ -206,6 +206,7 @@ RegisterNetEvent('qb-vehicleshop:server:buyShowroomVehicle', function(vehicle)
         TriggerClientEvent('QBCore:Notify', src, 'Congratulations on your purchase!', 'success')
         TriggerClientEvent('qb-vehicleshop:client:buyShowroomVehicle', src, vehicle, plate)
         pData.Functions.RemoveMoney('cash', vehiclePrice, 'vehicle-bought-in-showroom')
+        exports['jl-carboost']:AddVIN(plate)
     elseif bank > vehiclePrice then
         MySQL.Async.insert('INSERT INTO player_vehicles (license, citizenid, vehicle, hash, mods, plate, state) VALUES (?, ?, ?, ?, ?, ?, ?)', {
             pData.PlayerData.license,
@@ -219,11 +220,11 @@ RegisterNetEvent('qb-vehicleshop:server:buyShowroomVehicle', function(vehicle)
         TriggerClientEvent('QBCore:Notify', src, 'Congratulations on your purchase!', 'success')
         TriggerClientEvent('qb-vehicleshop:client:buyShowroomVehicle', src, vehicle, plate)
         pData.Functions.RemoveMoney('bank', vehiclePrice, 'vehicle-bought-in-showroom')
+        exports['jl-carboost']:AddVIN(plate)
     else
         TriggerClientEvent('QBCore:Notify', src, 'Not enough money', 'error')
     end
 end)
-
 -- Finance public vehicle
 RegisterNetEvent('qb-vehicleshop:server:financeVehicle', function(downPayment, paymentAmount, vehicle)
     local src = source
